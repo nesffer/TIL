@@ -1,5 +1,5 @@
 ### 사용자 설정
-> Preferences -> Settings - User
+`Preferences → Settings - User`
 ```json
 {
     "theme": "Default.sublime-theme",
@@ -22,7 +22,7 @@
     "line_padding_top": 1,
     "line_padding_bottom": 1,
     "always_show_minimap_viewport": true,
-    "draw_minimap_border": true
+    "draw_minimap_border": true,
     "ignored_packages": [
         // "Vintage"
     ],
