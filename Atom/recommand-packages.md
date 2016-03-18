@@ -47,14 +47,6 @@ apm install linter-pep8
 pip install flake8
 apm install linter-flake8
 ```
-  * Built-in docstrings check (Optional)
-  ```
-  pip install flake8-docstrings
-  ```
-  * OpenStack Style Guidelines check (Optional)
-  ```
-  pip install hacking
-  ```
 * [linter-htmlhint](https://atom.io/packages/linter-htmlhint)
 ```
 npm install -g htmlhint
@@ -72,5 +64,6 @@ apm install linter-eslint
 ```
 * [linter-jsonlint](https://atom.io/packages/linter-jsonlint)
 ```
+npm install -g jsonlint
 apm linter-jsonlint
 ```
