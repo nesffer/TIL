@@ -5,27 +5,28 @@
     "always_show_minimap_viewport": true,
     "bold_folder_labels": true,
     "caret_style": "phase",
-    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+    "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
     "default_line_ending": "unix",
     "draw_minimap_border": true,
     "draw_white_space": "all",
     "ensure_newline_at_eof_on_save": true,
     "fade_fold_buttons": false,
     "font_face": "Consolas",
-    "font_size": 12,
-    "highlight_line": false,
+    "font_size": 9,
+    "highlight_line": true,
     "highlight_modified_tabs": true,
-    "ignored_packages": [],
+    "ignored_packages": ["Vintage"],
     "line_padding_bottom": 1,
     "line_padding_top": 1,
-    "rulers": [80, 120],
+    "rulers": [80, 100],
     "tab_size": 4,
     "theme": "Default.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
-    "vintage_start_in_command_mode": true,
+    "vintage_start_in_command_mode": false,
     "word_wrap": true
 }
+
 ```
 
 ### Settings - User 항목 설명
