@@ -31,6 +31,10 @@ apm install activate-power-mode
 ```
 apm install pigments
 ```
+* [MagicPython](https://atom.io/packages/magicpython)
+```
+apm install magicpython
+```
 
 **Linter**
 * [linter](https://atom.io/packages/linter)
