@@ -1,5 +1,6 @@
 ### 사용자 설정
 `Preferences → Settings - User`
+
 ```json
 {
     "always_show_minimap_viewport": true,
@@ -38,9 +39,9 @@
 | :--- | :--- |
 | theme | 레이아웃 테마 |
 | color_scheme | 문자 색상 테마 |
-| font-face | 글꼴 |
-| font-size | 글꼴 크기 |
-| teb_size | 탭 간격 |
+| font_face | 글꼴 |
+| font_size | 글꼴 크기 |
+| tab_size | 탭 간격 |
 | word_wrap | true(자동 줄바꿈 사용) / false(자동 줄바꿈 미사용) |
 | draw_white_space | 탭, 공백 시각화하기 |
 | translate_tabs_to_spaces | true(스페이스) / false(탭) |
