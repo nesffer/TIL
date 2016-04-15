@@ -24,7 +24,7 @@ sudo apt-get install psensor
 
 ## Shutter
 ```shell
-sudo apt-get install shutter
+sudo apt-get install shutter gnome-web-photo
 ```
 
 ## Google Chrome
@@ -42,7 +42,13 @@ sudo apt-get update
 sudo apt-get install atom
 ```
 
-## 보미 플레이어
+## Visual Studio Code
+```shell
+https://code.visualstudio.com/Docs/?dv=linux64_deb
+https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/vscode-amd64.deb
+```
+
+## 보미
 ```shell
 sudo add-apt-repository ppa:darklin20/bomi
 sudo apt-get update
@@ -56,7 +62,7 @@ sudo apt-get install alacarte
 
 ## 기본적인 개발 도구
 ```shell
-sudo apt-get install ssh git build-essential
+sudo apt-get install ssh git build-essential synaptic filezilla gparted htop
 sudo vim /etc/ssh/sshd_config   # 포트 변경
 ```
 
@@ -81,7 +87,7 @@ sudo apt-get update
 sudo apt-get install mono-complete momodevelop
 ```
 
-## 멀티 모니터 창 이동
+## 멀티 모니터 창 이동 (Unity 환경에서 추천하지 않음)
 ```shell
 sudo apt-get install compizconfig-settings-manager
 ```
@@ -92,12 +98,6 @@ sudo apt-get install compizconfig-settings-manager
 5. If the plugin put doesn't appear in CCSM, install
 ```shell
 sudo apt-get install compiz-plugins compiz-plugins-extra
-```
-
-
-## 삭제해야 할 패키지
-```shell
-sudo apt-get purge unity-scope-musicstores unity-scope-yelp unity-scope-zotero unity-scope-colourlovers unity-scope-guayadeque unity-lens-friends unity-lens-friends unity-scope-tomboy unity-scope-gourmet unity-scope-musique unity-scope-openclipart unity-scope-firefoxbookmarks unity-webapps-common
 ```
 
 ## Unity Lens 비활성화
@@ -114,4 +114,3 @@ gsettings set com.canonical.Unity.Lenses enabled-scopes "['more_suggestions-amaz
 `System Settings` → `Security & Privacy` → `Search` → `OFF`
 
 ![Include online search results](http://i.imgur.com/Yomjm2o.png)
-
