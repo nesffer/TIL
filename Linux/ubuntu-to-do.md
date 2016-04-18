@@ -1,15 +1,43 @@
 # Ubuntu Favorite Packages
 
+## swappiness 값 변경
+> swappiness 값 확인
+> ```shell
+> cat /proc/sys/vm/swappiness
+> ```
+>
+> 임시로 swappiness 값 변경
+> ```shell
+> sudo sysctl vm.swappiness=10
+> ```
+>
+> 영구적으로 변경하기 위해 에디터 실행
+> ```shell
+> sudo vim /etc/sysctl.conf
+> ```
+>
+> 값 지정
+> ```
+> vm.swappiness=10
+> ```
+> 10으로 지정할 경우 메모리의 90%를 점유할 때 Swap을 사용하기 시작한다.
+
+## 기본적인 사용 환경
+```shell
+sudo apt-get install nautilus-open-terminal nautilus-image-converter gparted indicator-multiload shutter gnome-web-photo alacarte
+```
+
+## 기본적인 개발 도구
+```shell
+sudo apt-get install ssh git build-essential cmake synaptic filezilla htop
+sudo vim /etc/ssh/sshd_config   # 포트 변경
+```
+
 ## fcitx
 ```shell
 sudo add-apt-repository ppa:createsc/3beol
 sudo apt-get update
 sudo apt-get install fcitx fcitx-hangul fcitx-frontend-qt5
-```
-
-## System Load Indicator
-```shell
-sudo apt-get install indicator-multiload
 ```
 
 ## Psensor - A Graphical Temperature Monitor
@@ -20,11 +48,6 @@ sensors
 sudo add-apt-repository ppa:jfi/ppa
 sudo apt-get update
 sudo apt-get install psensor
-```
-
-## Shutter
-```shell
-sudo apt-get install shutter gnome-web-photo
 ```
 
 ## Google Chrome
@@ -55,17 +78,6 @@ sudo apt-get update
 sudo apt-get install bomi
 ```
 
-## Alacarte (Main Menu)
-```
-sudo apt-get install alacarte
-```
-
-## 기본적인 개발 도구
-```shell
-sudo apt-get install ssh git build-essential synaptic filezilla gparted htop
-sudo vim /etc/ssh/sshd_config   # 포트 변경
-```
-
 ## GitKraken
 ```shell
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
@@ -83,21 +95,26 @@ sudo apt-get install oracle-java8-installer
 ```shell
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
-sudo apt-get update
-sudo apt-get install mono-complete momodevelop
+sudo apt-get update && sudo apt-get install mono-complete monodevelop
 ```
 
-## 멀티 모니터 창 이동 (Unity 환경에서 추천하지 않음)
+## f.lux
 ```shell
-sudo apt-get install compizconfig-settings-manager
+wget https://justgetflux.com/linux/xflux64.tgz
+tar zxvf xflux64.tgz
+./xflux -l 36 -g 127 -k 4200
 ```
-1. Run it → Go to bottom (Window Management) → Go to "Put."
-2. Enable the plugin.
-3. Configure shortcut for "Put to next Output."
-4. Log out and back in again.
-5. If the plugin put doesn't appear in CCSM, install
+
+## Synapse
 ```shell
-sudo apt-get install compiz-plugins compiz-plugins-extra
+sudo add-apt-repository -y ppa:synapse-core/ppa
+sudo apt-get update && sudo apt-get install synapse
+```
+
+## My-Weather-Indicator
+```shell
+sudo add-apt-repository ppa:atareao/atareao
+sudo apt-get update && sudo apt-get install my-weather-indicator
 ```
 
 ## Unity Lens 비활성화
