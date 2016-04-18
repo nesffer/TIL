@@ -33,11 +33,13 @@
 ## Shortcut Keys
 | lazy | mnemonic | open file explorer |
 | :--- | :------- | :------------------|
-| :e. | :edit . | at current working directory |
-| :sp. | :split . |	in split at current working directory |
-| :vs. | :vsplit . | in vertical split at current working directory |
+| :e . | :edit . | at current working directory |
+| :sp . | :split . |	in split at current working directory |
+| :vs . | :vsplit . | in vertical split at current working directory |
 | :E | :Explore | at directory of current file |
 | :Se |	:Sexplore | in split at directory of current file |
 | :Vex | :Vexplore | in vertical split at directory of current file |
 
 [The file Explorer](http://vimcasts.org/episodes/the-file-explorer)
+
+[Resize splits more quickly](http://vim.wikia.com/wiki/Resize_splits_more_quickly)
