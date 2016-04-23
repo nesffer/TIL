@@ -1,6 +1,6 @@
 ## Zsh, Oh-My-Zsh 설치
 ```shell
-sudo apt-get install zsh git    # Git 필요
+sudo apt install zsh git    # Git 필요
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 chsh -s `which zsh`             # 기본 셸 변경
 zsh                             # 셸 변경
