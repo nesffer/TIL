@@ -7,31 +7,39 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css" /> -->
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/prop-types@15/prop-types.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      const Btn = ({ text, changeValue }) => {
+      const Btn = ({ text, fontSize = 16 }) => {
         console.log(text, ': 렌더링 되었습니다.')
         return (
           <button
-            style={{ backgroundColor: 'cyan', color: 'white', padding: '10px 20px', border: 0, borderRadius: '10px' }}
-            onClick={changeValue}
+            style={{
+              backgroundColor: 'cyan',
+              color: 'white',
+              padding: '10px 20px',
+              border: 0,
+              borderRadius: '10px',
+              fontSize,
+            }}
           >
             {text}
           </button>
         )
       }
-      const MemorizedBtn = React.memo(Btn)
+      Btn.propTypes = {
+        text: PropTypes.string,
+        fontSize: PropTypes.number,
+      }
       const App = () => {
-        const [value, setValue] = React.useState('Save Changes')
-        const changeValue = () => setValue('Revert Changes')
         return (
           <div>
-            <MemorizedBtn text={value} changeValue={changeValue} />
-            <MemorizedBtn text="Confirm" />
+            <Btn text={'Save Changes'} fontSize={24} />
+            <Btn text={'Save Changes'} />
           </div>
         )
       }
